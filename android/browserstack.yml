@@ -19,8 +19,8 @@ buildIdentifier: '#${BUILD_NUMBER}'
 # and does NOT push `framework` into the W3C session caps, so it is safe here.
 framework: junit5
 
-# Set `app` to the pre-uploaded BrowserStack app id (bs://...) or a local path.
-app: bs://92d48b416632f2b1734259565ceab61b05ad0b24
+# Public sample app committed in this repo (relative path); the SDK uploads it at run time.
+app: ./WikipediaSample.apk
 
 # =======================================
 # Platforms (Devices to test)
