@@ -35,7 +35,7 @@ platforms:
 # =======================
 parallelsPerPlatform: 1
 
-source: vanilla-java-appium-app-browserstack:sample-sdk:v1.0
+source: java:appium-sample-sdk:v1.0
 
 # ======================
 # Test Observability
