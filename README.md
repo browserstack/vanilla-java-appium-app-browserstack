@@ -18,7 +18,7 @@ driving JUnit 5.
 
 ```bash
 git clone <this-repo>
-cd vanilla-java-appium/android
+cd vanilla-java-appium-app-browserstack/android
 mvn -DskipTests compile
 ```
 
