@@ -1,0 +1,50 @@
+# =============================
+# Set BrowserStack Credentials
+# =============================
+# Add your BrowserStack userName and accessKey here or set BROWSERSTACK_USERNAME and
+# BROWSERSTACK_ACCESS_KEY as env variables
+userName: YOUR_USERNAME
+accessKey: YOUR_ACCESS_KEY
+
+# ======================
+# BrowserStack Reporting
+# ======================
+projectName: BrowserStack Samples
+buildName: appauto-vanilla-java-appium
+buildIdentifier: '#${BUILD_NUMBER}'
+# `framework` lets the Java SDK instrument the JUnit 5 runner so it can report
+# per-test context (name, status) to BrowserStack. Unlike the Node App Automate
+# samples (where `framework` is injected into bstack:options and the Appium hub
+# rejects it), the Java SDK reports test context out-of-band via the -javaagent
+# and does NOT push `framework` into the W3C session caps, so it is safe here.
+framework: junit5
+
+# Public sample app committed in this repo (relative path); the SDK uploads it at run time.
+app: ./WikipediaSample.apk
+
+# =======================================
+# Platforms (Devices to test)
+# =======================================
+platforms:
+  - deviceName: Samsung Galaxy S22 Ultra
+    osVersion: "12.0"
+    platformName: android
+
+# =======================
+# Parallels per Platform
+# =======================
+parallelsPerPlatform: 1
+
+source: java:appium-sample-sdk:v1.0
+
+# ======================
+# Test Observability
+# ======================
+testObservability: true
+
+# ===================
+# Debugging features
+# ===================
+debug: true
+networkLogs: true
+consoleLogs: errors
